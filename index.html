@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bala — Freelance Software Engineer | Websites, Mobile Apps, Digital Marketing, AI Automations</title>
+<meta name="description" content="Bala is a freelance software engineer in India building websites, mobile apps, digital marketing and AI automations for growing businesses.">
+<meta name="theme-color" content="#0E1624">
+<meta property="og:title" content="Bala — Freelance Software Engineer">
+<meta property="og:description" content="Websites, mobile apps, digital marketing and AI automations for growing businesses.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E1624'/%3E%3Cpath d='M24 20 12 32l12 12M40 20l12 12-12 12' fill='none' stroke='%233DDC97' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+:root{
+  --ink:#0E1624; --ink-2:#1A2638; --cream:#F6F4EE; --line:#D9D4C7;
+  --mint:#3DDC97; --mint-deep:#0B7A55; --muted:#4B5563; --muted-dark:#9FB0C6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{width:min(1080px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.1;letter-spacing:-0.02em;margin:0;text-wrap:balance}
+p{text-wrap:pretty}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:600;font-size:16px;text-decoration:none;min-height:48px;transition:transform .15s ease, background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--mint);color:var(--ink)}
+.btn-primary:hover{background:#5BE8AB}
+.btn-ghost{border:1px solid rgba(246,244,238,.35);color:var(--cream)}
+.btn-ghost:hover{background:rgba(246,244,238,.08)}
+:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
+
+/* nav + hero */
+.hero{background:var(--ink);color:var(--cream);position:relative;overflow:hidden}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo svg{flex:none}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:15px;font-weight:500}
+nav ul a{text-decoration:none;color:var(--muted-dark)}
+nav ul a:hover{color:var(--cream)}
+.hero-body{padding:72px 0 104px;max-width:760px}
+.tag{font-family:ui-monospace,'SFMono-Regular',Menlo,monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mint);display:inline-flex;align-items:center;gap:10px}
+.tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--mint)}
+.hero h1{font-size:clamp(40px,7vw,76px);margin:22px 0 22px}
+.hero h1 em{font-style:normal;color:var(--mint)}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted-dark);max-width:620px;margin:0 0 34px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.mark{position:absolute;right:-40px;top:70px;width:min(460px,60vw);opacity:.12;pointer-events:none}
+
+/* sections */
+section{padding:88px 0}
+.eyebrow{font-family:ui-monospace,Menlo,monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mint-deep);margin:0 0 12px}
+h2{font-size:clamp(30px,4.4vw,46px);margin-bottom:14px}
+.sub{color:var(--muted);max-width:560px;margin:0 0 44px;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 24px}
+.card .ico{width:44px;height:44px;border-radius:11px;background:var(--ink);display:grid;place-items:center;margin-bottom:20px}
+.card h3{font-size:22px;margin-bottom:10px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;list-style:none;margin:0;padding:0}
+.steps li{counter-increment:s;border-top:2px solid var(--ink);padding-top:18px}
+.steps li::before{content:"0" counter(s);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:var(--mint-deep)}
+.steps h3{font-size:22px;margin:8px 0 8px}
+.steps p{margin:0;color:var(--muted)}
+
+.about{background:#fff;border-block:1px solid var(--line)}
+.about .cols{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
+.about p{font-size:18px;margin:0 0 16px;color:#1f2937}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.facts li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:16px}
+.facts span:first-child{color:var(--muted)}
+.facts span:last-child{font-weight:600;text-align:right}
+
+.contact{background:var(--ink);color:var(--cream);text-align:center}
+.contact h2{font-size:clamp(34px,5.5vw,60px);margin-inline:auto;max-width:720px}
+.contact .sub{color:var(--muted-dark);margin-inline:auto}
+.contact .cta{justify-content:center}
+.links{margin-top:34px;display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:center;color:var(--muted-dark);font-size:16px}
+.links a{color:var(--cream);text-decoration-color:rgba(246,244,238,.4);text-underline-offset:4px}
+footer{background:var(--ink);color:var(--muted-dark);font-size:14px;padding:0 0 28px;text-align:center}
+footer .wrap{border-top:1px solid rgba(246,244,238,.12);padding-top:22px}
+
+@media (max-width:720px){
+  nav ul{display:none}
+  .hero-body{padding:44px 0 72px}
+  section{padding:64px 0}
+  .about .cols{grid-template-columns:1fr;gap:28px}
+  .mark{top:120px;right:-90px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="mark" viewBox="0 0 84 48" fill="none" stroke="#3DDC97" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 L6 24 L22 38"/><path d="M62 10 L78 24 L62 38"/><path d="M48 6 L36 42"/></svg>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="logo" href="#top" id="top">
+        <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1A2638"/><path d="M24 20 12 32l12 12M40 20l12 12-12 12" fill="none" stroke="#3DDC97" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Bala
+      </a>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">How I work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-body">
+      <span class="tag">Freelance software engineer</span>
+      <h1>I build the digital side of your business, <em>end to end.</em></h1>
+      <p class="lead">Websites, mobile apps, digital marketing and AI automations for growing businesses. One person, one point of contact, from first idea to launch.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#contact">Start a project</a>
+        <a class="btn btn-ghost" href="#services">See what I do</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <h2>Four ways I can help.</h2>
+    <p class="sub">Use one, or combine them. Everything is built around getting you more customers and saving you time.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3DDC97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 22h8M12 18v4"/></svg></div>
+        <h3>Website</h3>
+        <p>Fast, clean business websites and landing pages that look sharp on every device and turn visitors into enquiries.</p>
+      </article>
+      <article class="card">
+        <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3DDC97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
+        <h3>Mobile App</h3>
+        <p>Android and iOS apps, from the first sketch to the app stores. Smooth to use and built to grow with you.</p>
+      </article>
+      <article class="card">
+        <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3DDC97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h3l6 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M17 9a4 4 0 0 1 0 6"/></svg></div>
+        <h3>Digital Marketing</h3>
+        <p>Get found online. Search visibility, social presence and focused campaigns that bring the right people to you.</p>
+      </article>
+      <article class="card">
+        <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3DDC97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>AI Automations</h3>
+        <p>Hand repetitive work to AI: replies, follow-ups, reports and data entry, so your team spends time on what matters.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="process" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">How I work</p>
+    <h2>Simple, clear, no surprises.</h2>
+    <p class="sub">You always know what is being built, what it costs and when it ships.</p>
+    <ol class="steps">
+      <li><h3>Tell me what you need</h3><p>A short call or message about your business, your goals and your timeline.</p></li>
+      <li><h3>Get a clear plan</h3><p>I send a scope, a fixed price and a delivery date before any work begins.</p></li>
+      <li><h3>Build and launch</h3><p>You see progress along the way. I launch it, hand it over and stay available after.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap cols">
+    <div>
+      <p class="eyebrow">About</p>
+      <h2>Hi, I'm Bala.</h2>
+      <p>I'm a software engineer with six years of experience building products for real businesses, and I now work with clients directly as a freelancer.</p>
+      <p>Working with me means no agency layers and no hand-offs between teams. You talk to the person who builds your project.</p>
+    </div>
+    <ul class="facts" aria-label="Quick facts">
+      <li><span>Experience</span><span>6 years</span></li>
+      <li><span>Based in</span><span>India</span></li>
+      <li><span>Works with</span><span>Clients anywhere</span></li>
+      <li><span>Services</span><span>Web · App · Marketing · AI</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--mint)">Contact</p>
+    <h2>Let's build something.</h2>
+    <p class="sub">Tell me about your project. I usually reply within a day.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="mailto:bala.code01@gmail.com?subject=New%20project%20enquiry">bala.code01@gmail.com</a>
+      <a class="btn btn-ghost" href="tel:+917708775651">+91-77087 75651</a>
+    </div>
+    <div class="links">
+      <span>Also find me on <a href="https://github.com/balacode01" rel="noopener">GitHub</a></span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Bala. All rights reserved.</div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>
